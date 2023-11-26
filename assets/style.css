@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --White: #FFF;
+    --Platinum: #E8EBE4;
+    --Gray: #BEC1BB;
+    --BlueBell: #A491D2;
+    --Soap: #CDC3E6;
+    --PaleLavender: #D4DCFF;
+    --DarkJungle: #1B1F21;
+    --OuterSpace: #444749;
+    --OldSilver: #828485;
+  }
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+aside {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8em 0;
+    border-bottom: 1px solid var(--Gray);
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    border-radius: 100%;
+    border: 1px solid var(--Gray);
+    max-width: 2.4em;
+    max-height: 2.4em;
+    margin-right: 0.5em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usr-name {
+    font-weight: 500;
+    font-size: 1em;
+    margin-left: 0.1em;;
+}
+
+.status {
+    font-size: 0.6em;
+    color: var(--OldSilver);
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+i {
+    color: var(--OldSilver);
+    font-size:1.1em;
+    margin: 0 0.4em;
+}
+
+.pic img {
+    border-radius: 100%;
+    min-width: 3.5em;
+    max-width: 3.5em;
+}
+
+.content {
+    border-left: 1px solid var(--OldSilver); /* remover */
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.content p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.new-chat {
+    min-height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    background-color: var(--BlueBell);
+    padding: 1em 3em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--Gray);
+    align-items: center;
+    padding: 1em 0;
+}
+
+p.name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+p.msg, p.name {
+    min-width: 10em;
+    max-width: 10em;
+}
